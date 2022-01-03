@@ -9,16 +9,24 @@
 /* Begin PBXBuildFile section */
 		FA25CF9F27823D0600ADF0F4 /* MapAppMVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA25CF9E27823D0600ADF0F4 /* MapAppMVVMApp.swift */; };
 		FA25CFA127823D0600ADF0F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA25CFA027823D0600ADF0F4 /* ContentView.swift */; };
-		FA25CFA327823D0800ADF0F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA25CFA227823D0800ADF0F4 /* Assets.xcassets */; };
 		FA25CFA627823D0800ADF0F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA25CFA527823D0800ADF0F4 /* Preview Assets.xcassets */; };
+		FA25CFAE2782436B00ADF0F4 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA25CFAD2782436B00ADF0F4 /* Location.swift */; };
+		FA25CFB0278243F900ADF0F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA25CFAF278243F900ADF0F4 /* Assets.xcassets */; };
+		FA25CFB5278249F200ADF0F4 /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA25CFB4278249F200ADF0F4 /* LocationsDataService.swift */; };
+		FA25CFB72783828200ADF0F4 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA25CFB62783828200ADF0F4 /* LocationView.swift */; };
+		FA25CFB92783836100ADF0F4 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA25CFB82783836100ADF0F4 /* LocationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FA25CF9B27823D0600ADF0F4 /* MapAppMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapAppMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA25CF9E27823D0600ADF0F4 /* MapAppMVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAppMVVMApp.swift; sourceTree = "<group>"; };
 		FA25CFA027823D0600ADF0F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		FA25CFA227823D0800ADF0F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA25CFA527823D0800ADF0F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA25CFAD2782436B00ADF0F4 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		FA25CFAF278243F900ADF0F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA25CFB4278249F200ADF0F4 /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
+		FA25CFB62783828200ADF0F4 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		FA25CFB82783836100ADF0F4 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +61,11 @@
 			children = (
 				FA25CF9E27823D0600ADF0F4 /* MapAppMVVMApp.swift */,
 				FA25CFA027823D0600ADF0F4 /* ContentView.swift */,
-				FA25CFA227823D0800ADF0F4 /* Assets.xcassets */,
+				FA25CFB3278249DC00ADF0F4 /* DataServiece */,
+				FA25CFAC2782434500ADF0F4 /* Model */,
+				FA25CFB2278249C600ADF0F4 /* ViewModel */,
+				FA25CFB1278249B900ADF0F4 /* View */,
+				FA25CFAF278243F900ADF0F4 /* Assets.xcassets */,
 				FA25CFA427823D0800ADF0F4 /* Preview Content */,
 			);
 			path = MapAppMVVM;
@@ -65,6 +77,38 @@
 				FA25CFA527823D0800ADF0F4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA25CFAC2782434500ADF0F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA25CFAD2782436B00ADF0F4 /* Location.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA25CFB1278249B900ADF0F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA25CFB62783828200ADF0F4 /* LocationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA25CFB2278249C600ADF0F4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA25CFB82783836100ADF0F4 /* LocationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FA25CFB3278249DC00ADF0F4 /* DataServiece */ = {
+			isa = PBXGroup;
+			children = (
+				FA25CFB4278249F200ADF0F4 /* LocationsDataService.swift */,
+			);
+			path = DataServiece;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +169,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA25CFB0278243F900ADF0F4 /* Assets.xcassets in Resources */,
 				FA25CFA627823D0800ADF0F4 /* Preview Assets.xcassets in Resources */,
-				FA25CFA327823D0800ADF0F4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +181,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA25CFB5278249F200ADF0F4 /* LocationsDataService.swift in Sources */,
+				FA25CFB92783836100ADF0F4 /* LocationViewModel.swift in Sources */,
 				FA25CFA127823D0600ADF0F4 /* ContentView.swift in Sources */,
+				FA25CFB72783828200ADF0F4 /* LocationView.swift in Sources */,
+				FA25CFAE2782436B00ADF0F4 /* Location.swift in Sources */,
 				FA25CF9F27823D0600ADF0F4 /* MapAppMVVMApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
